@@ -1,0 +1,134 @@
+.inner{
+	width: 80%;
+	margin: auto;
+}
+
+.menu{
+	background: #8BC34A;
+	width: 100%;
+	height: 66px;
+	line-height:66px;
+	position: fixed;
+	z-index:1;
+}
+
+.m-left{
+	float:left;
+	position:absolute;
+	left:5%;
+}
+
+.logo{
+	margin:0;
+	padding:0;
+	height: 63px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-weight:900;
+	font-size:35px;
+	letter-spacing:1px;
+}
+
+.m-right{
+	left:0;
+	float:right;
+}
+
+.m-link{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding:0;
+	margin: 0 15px;
+	font-family: 'Lato';
+	transition: all 0.3s ease-in-out;
+	border-bottom: 3px solid transparent;
+	display: inline-block;
+	height: 63px;
+}
+
+.m-link:hover{
+	
+	border-color:  #fff;
+}
+
+.m-link i{
+	margin-right:5px;
+}
+
+.m-nav-toggle{
+	width: 40px;
+	height: 66px;
+	
+	display: none;
+	align-items: center;
+	float: right;
+	cursor: pointer;
+}
+
+
+span.m-toggle-icon, span.m-toggle-icon:before, span.m-toggle-icon:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+}
+
+.m-toggle-icon:before{top: 10px;}
+.m-toggle-icon:after{top: -14px;}
+
+.m-right.is-open{
+	transform: translateX(0);
+	position:fixed;
+}
+
+.menu.is-open{
+	position:fixed;
+}
+
+.m-nav-toggle.is-open span.m-toggle-icon{
+	background: transparent;
+}
+
+.m-nav-toggle.is-open span.m-toggle-icon:before, .m-nav-toggle.is-open span.m-toggle-icon:after {
+	transform-origin: center;
+	transform: rotate(45deg);
+	top: 0;
+}
+
+.m-nav-toggle.is-open span.m-toggle-icon:before{
+	transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 1250px){
+	
+	
+	.m-right{
+		position: absolute;
+		top: 66px;
+		left:0;
+		width: 250px;
+		height: 100%;
+		background: #8BC34A;
+		transform: translateX(-100%);
+		transition: all 0.3s ease-in-out;
+	}
+	
+	.m-link{
+		display:block;
+		text-align: center;
+		padding: 0;
+		margin: 0 20px;
+		height: 55px;
+	}
+	
+	.m-nav-toggle{
+		display: flex;
+	}
+
+}

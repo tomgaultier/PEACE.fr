@@ -1,0 +1,97 @@
+body{
+	background-image:url(../image/luffyetzoro.jpg);
+	
+	background-attachment:fixed;
+	
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	
+}
+
+.fond {		/*formulaire */
+	max-width: 1000px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	box-shadow: 1px 2px 9px 0px rgba(0,0,0,0.75);
+	padding:10px;
+}
+
+.conteneur_boutton button{
+	width:150px;
+	text-transform : uppercase;
+	border: transparent;
+	-webkit-box-shadow: 1px 3px 4px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 3px 4px -1px rgba(0,0,0,0.75);
+	box-shadow: 1px 3px 4px -1px rgba(0,0,0,0.75);
+	background-color: #F5F5F5;
+	padding: 5px;
+	margin-bottom:15px;
+}
+
+#contenu{
+	margin-bottom: 15px;
+}
+
+
+
+#champs{	/*Ligne des champs d'entrée */
+	display: flex;
+	flex-wrap: wrap;	
+	justify-content: space-around;
+}
+
+.ligne{		/* div correspondant aux ligenes (1 : champs/2 : bouttons) */
+	margin: 5px;
+}
+
+div input{	/*entrées du prenom, nom, adresse mail */
+	flex: 1;
+	border-bottom: solid 1px  #8C8A8D;
+	border-top: transparent;
+	border-right: transparent;
+	border-left: transparent;
+	margin: 5px;
+	padding: 5px;
+}
+
+
+
+form button{
+	text-transform : uppercase;
+	border: transparent;
+	-webkit-box-shadow: 1px 3px 4px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 3px 4px -1px rgba(0,0,0,0.75);
+	box-shadow: 1px 3px 4px -1px rgba(0,0,0,0.75);
+	background-color: #EFEFEF;
+	padding: 5px;
+	margin: 4px;
+	
+}
+
+form button:hover{	/* survole des boutons */
+	background-color: #CBCBCB;
+}
+
+
+#messages{
+	overflow-x: auto;
+}
+
+
+#messages table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+
+
+
+#messages table td{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+

@@ -1,0 +1,10 @@
+body{
+	background-image:url(../image/luffyetzoro.jpg);
+	
+	background-attachment:fixed;
+	
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	
+}
