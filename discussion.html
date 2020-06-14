@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8" >
+		<title>Peace : Discussion</title>
+		<link href="css/site.css" rel="stylesheet" media="all" type="text/css">
+		<link href="css/discussion.css" rel="stylesheet" media="all" type="text/css">
+		<link href="css/header.css" rel="stylesheet" media="all" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" media="all" type="text/css">
+		
+		
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+	</head>
+	
+	<body>
+		
+		<header role="header">
+			<nav class="menu" role="navigation">		
+				<div class="inner">			
+					<div class="m-left">
+						<h1 class="logo">Peace</h1>
+					</div>					
+					<div class="m-right">
+						<a href="index.html" class="m-link"><i class="fa fa-home" aria-hidden="true"></i> Accueil</a>
+						<a href="episodes.html" class="m-link">Les épisodes</a>
+						<a href="histoire.html" class="m-link">Histoire de One Piece</a>
+						<a href="galerie.html" class="m-link">Galerie</a>
+						<a href="organisation.html" class="m-link">Les organisations</a>
+						<a href="discussion.html" class="m-link">Discutons</a>
+					</div>					
+					<div class="m-nav-toggle">
+						<span class="m-toggle-icon"></span>
+					</div>				
+				</div>			
+			</nav>
+		</header>
+			
+		<main id="contenu">
+		
+			<div class="article">
+			
+				<h1 class="_h1"><b> Bienvenue dans la rubrique discussion </b></h1>
+				<hr class="solid">
+				<p class="_p1">
+					Ici, c'est la page dédié à la discussion entre vous. Vous pouvez parler de ce que vous voulez mais avec respect. Merci de bien
+					choisir le salon de discussion adapté à vos propos pour ne pas perturber les échanges, et bien sûr éviter les spoils.
+				</p>	
+			
+			</div>
+				
+			
+				
+			<form class="fond" name="formulaire" >
+				
+				<div id="champs" class="ligne" >	
+					<input  type="text" id="nom" placeholder="Entrez votre pseudo" name="nom">
+					<input  type="text" id="message" placeholder="Ajouter un message" name="message">	
+												
+				</div>
+				
+				<div class="ligne" id="ButtonScan">
+					<button type="button" id="ajout" onclick=ajouterScan()>Ajouter</button>
+					<button type="button" id="annule" onclick=annuler()>Annuler</button>
+				</div>
+					
+				<div class="ligne" id="ButtonAnime">
+					<button type="button" id="ajout" onclick=ajouterAnime()>Ajouter</button>
+					<button type="button" id="annule" onclick=annuler()>Annuler</button>
+				</div>	
+					
+				<div class="ligne" id="ButtonTheorie">
+					<button type="button" id="ajout" onclick=ajouterTheorie()>Ajouter</button>
+					<button type="button" id="annule" onclick=annuler()>Annuler</button>
+				</div>	
+					
+				<div class="ligne" id="ButtonAutres">
+					<button type="button" id="ajout" onclick=ajouterAutres()>Ajouter</button>
+					<button type="button" id="annule" onclick=annuler()>Annuler</button>
+				</div>	
+
+					
+			</form>
+			
+			<div class="fond" id="messages" >
+				
+				<nav class="conteneur_boutton">
+					<button type="button" onclick=showScan()>SCANS</button>
+					<button type="button" onclick=showAnime()>ANIME</button>
+					<button type="button" onclick=showTheorie()>THEORIE</button>
+					<button type="button" onclick=showAutres()>AUTRES</button>
+				</nav>
+					
+				<table id="MessageScan">
+					<caption id="center">L'avance des scans</caption>
+					
+				</table>
+					
+				<table id="MessageAnime">
+					<caption id="center">Autour de l'anime</caption>
+				</table>
+					
+				<table id="MessageTheorie">
+					<caption id="center">Vos théories</caption>
+				</table>
+					
+				<table id="MessageAutres">
+					<caption id="center">Autres</caption>	
+				</table>
+				
+			</div>
+				
+		</main>
+			
+			
+			
+			
+		<footer class="container-fluid  footer">	
+			<div>
+				<table>
+					<td >
+						<h4>Nous contacter pour partager vos dessins</h4>
+						<hr class="separator">
+						<a href="mailto:tom.gaultier@efrei.net" target="_BLANK">email Tom</a><br/>
+						<a href="mailto:karis.gwet@efrei.net" target="_BLANK">email Karis</a><br/>
+					</td>
+					<td >
+						<h4>Groupe</h4>
+						<hr class="separator">
+						<a href="qui_sommes_nous.html" target="_BLANK">A propos de nous </a><br/>
+					</td>
+				</table>
+			</div>
+			<p>
+				PEACE &copy; 2020
+			</p>
+		</footer >
+
+		
+		
+		<script src="js/site.js" charset="utf-8"></script>
+		<script src="js/discussion.js" charset="utf-8"></script>
+	
+	</body>
+
+</html>
